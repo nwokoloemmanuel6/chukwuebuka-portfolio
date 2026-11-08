@@ -1,6 +1,6 @@
 # Student Portfolio and Academic Planner
 
-COS 106 (Introduction to Web Technologies) term project by Chukwuebuka Nwokolo, Miva Open University.
+CSC 106 (Introduction to Web Technologies) term project by Chukwuebuka Nwokolo, Miva Open University.
 
 A multi-page website built with plain HTML, CSS and JavaScript:
 
