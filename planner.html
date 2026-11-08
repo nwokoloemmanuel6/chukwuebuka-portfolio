@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner | Chukwuebuka Nwokolo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">C. Nwokolo</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html" class="active">Academic Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Academic Planner</h1>
+        <p class="intro">Add your study tasks, tick them when they are done and delete the ones you do not need.</p>
+
+        <section class="planner">
+            <div class="planner-form">
+                <input type="text" id="taskInput" placeholder="Write a task, for example: Revise Week 4">
+                <button id="addButton">Add Task</button>
+            </div>
+
+            <p id="message"></p>
+            <p id="counter"></p>
+
+            <ul id="taskList"></ul>
+
+            <button id="clearButton">Clear Completed</button>
+            <button id="clearAllButton">Clear All</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Chukwuebuka Nwokolo | COS 106 Term Project | Miva Open University</p>
+    </footer>
+
+    <script src="planner.js"></script>
+</body>
+</html>

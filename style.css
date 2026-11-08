@@ -1,0 +1,411 @@
+/* Dark theme for my portfolio website */
+
+/* Reset some default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #12141a;
+    color: #e6e6e6;
+    line-height: 1.6;
+}
+
+a {
+    color: #4da3ff;
+    text-decoration: none;
+}
+
+/* ---------- Navigation ---------- */
+header {
+    background-color: #1b1e27;
+    border-bottom: 2px solid #4da3ff;
+}
+
+nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul a {
+    color: #cccccc;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul a:hover,
+nav ul a.active {
+    background-color: #4da3ff;
+    color: #12141a;
+}
+
+/* ---------- Main content ---------- */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.photo {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 4px solid #4da3ff;
+    object-fit: cover;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.welcome {
+    color: #4da3ff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 22px;
+    background-color: #4da3ff;
+    color: #12141a;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #7bbcff;
+    transform: translateY(-3px);
+}
+
+/* ---------- Cards ---------- */
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background-color: #1b1e27;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #2c3040;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #4da3ff;
+}
+
+.card h2 {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+/* ---------- Inner pages (About, Projects, Planner, Contact) ---------- */
+main h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+main h2 {
+    margin-bottom: 10px;
+    color: #4da3ff;
+}
+
+main section {
+    margin-bottom: 35px;
+}
+
+main ul {
+    margin-left: 20px;
+}
+
+main li {
+    margin-bottom: 6px;
+}
+
+.intro {
+    margin-bottom: 25px;
+    color: #bbbbbb;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px 14px;
+    text-align: left;
+    border: 1px solid #2c3040;
+}
+
+th {
+    background-color: #1b1e27;
+    color: #4da3ff;
+}
+
+tr:hover td {
+    background-color: #181b23;
+}
+
+/* Video */
+.video {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 2px solid #2c3040;
+}
+
+/* Projects */
+.projects {
+    display: flex;
+    gap: 20px;
+}
+
+.project {
+    flex: 1;
+    background-color: #1b1e27;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #2c3040;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    border-color: #4da3ff;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.project h2 {
+    font-size: 20px;
+}
+
+.project p {
+    margin-bottom: 8px;
+}
+
+/* Academic Planner */
+.planner-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.planner-form input {
+    flex: 1;
+}
+
+input[type="text"],
+textarea {
+    padding: 10px;
+    background-color: #1b1e27;
+    color: #e6e6e6;
+    border: 1px solid #2c3040;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4da3ff;
+}
+
+button {
+    padding: 10px 18px;
+    background-color: #4da3ff;
+    color: #12141a;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #7bbcff;
+}
+
+#message {
+    color: #ff6b6b;
+    min-height: 24px;
+}
+
+#counter {
+    color: #bbbbbb;
+    margin-bottom: 15px;
+}
+
+#taskList {
+    list-style: none;
+    margin-left: 0;
+}
+
+#taskList li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #1b1e27;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border: 1px solid #2c3040;
+}
+
+#taskList span {
+    flex: 1;
+}
+
+#taskList .done {
+    text-decoration: line-through;
+    color: #777777;
+}
+
+#taskList button.delete {
+    background-color: #ff6b6b;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+#taskList button.delete:hover {
+    background-color: #ff8f8f;
+}
+
+#clearButton {
+    margin-top: 10px;
+    background-color: #2c3040;
+    color: #e6e6e6;
+}
+
+#clearButton:hover {
+    background-color: #3a4054;
+}
+
+#clearAllButton {
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #ff6b6b;
+}
+
+#clearAllButton:hover {
+    background-color: #ff8f8f;
+}
+
+/* Contact form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.contact-form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.error {
+    color: #ff6b6b;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+#successMessage {
+    margin-top: 15px;
+    color: #5fd38d;
+}
+
+.note {
+    margin-top: 25px;
+    color: #888888;
+    font-size: 14px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1b1e27;
+    color: #999999;
+    font-size: 14px;
+}
+
+/* ---------- Phones and small screens ---------- */
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cards,
+    .projects {
+        flex-direction: column;
+    }
+
+    .planner-form {
+        flex-direction: column;
+    }
+}

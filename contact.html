@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Chukwuebuka Nwokolo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">C. Nwokolo</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html">Academic Planner</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Me</h1>
+        <p class="intro">Fill in the form below to send me a message.</p>
+
+        <form id="contactForm" class="contact-form" novalidate>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <span class="error" id="nameError"></span>
+
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email">
+            <span class="error" id="emailError"></span>
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone">
+            <span class="error" id="phoneError"></span>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+            <span class="error" id="messageError"></span>
+
+            <button type="submit" class="button">Send Message</button>
+            <p id="successMessage"></p>
+        </form>
+
+        <p class="note">This is a practice form for my course. It checks the details but does not send the message anywhere.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Chukwuebuka Nwokolo | COS 106 Term Project | Miva Open University</p>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>
